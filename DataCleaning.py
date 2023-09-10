@@ -24,6 +24,9 @@ counter = 0
 first_row = True
 for row in new_list:
     if first_row:
+        #Change the coloumn name from milliseconds to hours
+        row[-2] = "Total In Bed Duration (hrs)"
+        row[-1] = "Total Sleep Duration (hrs)"
         first_row = False
         pass
 
